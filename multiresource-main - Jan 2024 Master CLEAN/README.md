@@ -25,7 +25,10 @@ Some jobs require a group of resources with varied skills, to go on-site over th
 
 Additional installation details can be found in the documentation here:  https://salesforce.quip.com/xsgaA6pCTP1t#temp:C:LHS21bff2fd7b32415ba9110dcd4
 
-# V1 Changes- Dec 13, 2022
+# V1.1 Changes - Jan 24, 2024
+* Cleaned up the package from attributes that could cause that package to fail.
+
+# V1 Changes - Dec 13, 2022
 * As a Scheduler, I want to define the Skills and Skill Levels required at the Work Order and when selecting Service Resources I would like to see how closely their skills match to the skills required on the Work Order.
 * As a Scheduler, I'd like to see what skills are missing in the selection screens so that I can be aware, right away that I'll have a staffing issue.
 * As a Scheduler, I want to know if there are any existing conflicts for a set of Resources for a given date range which will help me select the Resources that are most available and will help me select the Dates that do not have any conflicts.
