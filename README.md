@@ -1,4 +1,4 @@
-#Service Appointment Generator Package
+Service Appointment Generator Package
 Some jobs require a group of resources with varied skills, to go on-site over the course of multiple days. Some skills are not required for the whole duration. Some skills are not required for the whole day of work. Job planners need the ability to build these dynamic crews for multi-day jobs and see the availability and skills of the resources on a single screen:
 
 Wanting in day changes to the Crew Member/Job Assignment i.e. a crew member called in sick on Monday and we need to send someone in just for that day
