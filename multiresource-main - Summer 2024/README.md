@@ -25,6 +25,9 @@ Some jobs require a group of resources with varied skills, to go on-site over th
 
 Additional installation details can be found in the documentation here:  https://salesforce.quip.com/xsgaA6pCTP1t#temp:C:LHS21bff2fd7b32415ba9110dcd4
 
+# V1.2 Changes - June 18, 2024
+* Cleaned up the package from attributes that could cause that package to fail and removed files that are not required.
+
 # V1.1 Changes - Jan 24, 2024
 * Cleaned up the package from attributes that could cause that package to fail.
 
