@@ -74,7 +74,7 @@ public With Sharing class MRDTGetSTMs {
                         TerritoryType 
                         FROM ServiceTerritoryMember 
                         WHERE ServiceTerritoryId in :listST 
-                        AND ((EffectiveStartDate <= :startDateTime AND EffectiveEndDate = null) OR (EffectiveStartDate <= :startDateTime AND EffectiveEndDate >= :endDateTime))];
+                        AND ((ServiceResource.IsActive = true AND EffectiveStartDate <= :startDateTime AND EffectiveEndDate = null) OR (ServiceResource.IsActive = true AND EffectiveStartDate <= :startDateTime AND EffectiveEndDate >= :endDateTime))];
             for(ServiceTerritoryMember stm :listSTM) {
                 setSRId.add(stm.ServiceResourceId);
             }
