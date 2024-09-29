@@ -11,7 +11,8 @@ public class MRDTGetSTMsTestClass{
         ServiceResourceSkill resourceSkill = TestUtility.createServiceResourceSkill(sr.Id);
         ServiceTerritoryMember stm = TestUtility.createServiceTerritoryMember(sr.Id, st.Id, Datetime.now().addDays(-1));
         ResourceAbsence ra = TestUtility.createResourceAbsence(sr.Id, Datetime.now(), Datetime.now().addHours(4));
-        WorkOrder wo = TestUtility.createWorkOrder();
+        WorkType wt = TestUtility.createWorkType('test', 1, 'hours');
+        WorkOrder wo = TestUtility.createWorkOrder('test',wt.Id,st.Id);
         MRDTGetSTMs.inPayLoad payload = new MRDTGetSTMs.inPayLoad();
         payload.inTerritoryId = 'All';
         payload.inSkillId = 'All';
@@ -45,8 +46,8 @@ public class MRDTGetSTMsTestClass{
         ServiceResourceSkill resourceSkill = TestUtility.createServiceResourceSkill(sr.Id);
         ServiceTerritoryMember stm = TestUtility.createServiceTerritoryMember(sr.Id, st.Id, Datetime.now().addDays(-1));
         ResourceAbsence ra = TestUtility.createResourceAbsence(sr.Id, Datetime.now(), Datetime.now().addHours(4));
-        WorkOrder wo = TestUtility.createWorkOrder();
-        ServiceAppointment sa = TestUtility.createServiceAppointment(sr.Id, wo.Id, Datetime.now(), Datetime.now().addDays(4), Datetime.now(), Datetime.now().addHours(2), 'Scheduled', st.Id);
+        WorkType wt = TestUtility.createWorkType('test', 1, 'hours');
+        WorkOrder wo = TestUtility.createWorkOrder('test',wt.Id,st.Id);        ServiceAppointment sa = TestUtility.createServiceAppointment(sr.Id, wo.Id, Datetime.now(), Datetime.now().addDays(4), Datetime.now(), Datetime.now().addHours(2), 'Scheduled', st.Id);
         AssignedResource ar = TestUtility.createAssignedResource(sa.Id, sr.Id);
         MRDTGetSTMs.inPayLoad payload = new MRDTGetSTMs.inPayLoad();
         payload.inTerritoryId = 'All';
@@ -78,10 +79,10 @@ public class MRDTGetSTMsTestClass{
         String userId = UserInfo.getUserId(); 
         ServiceResource sr = TestUtility.createServiceResource('test', true, userId, 'T');
         ServiceResourceSkill resourceSkill = TestUtility.createServiceResourceSkill(sr.Id);
-        ServiceTerritoryMember stm = TestUtility.createServiceTerritoryMember(sr.Id, st.Id, Datetime.now().addDays(-1));
+        //ServiceTerritoryMember stm = TestUtility.createServiceTerritoryMember(sr.Id, st.Id, Datetime.now().addDays(-1));
         //ResourceAbsence ra = TestUtility.createResourceAbsence(sr.Id, Datetime.now(), Datetime.now().addHours(4));
-        WorkOrder wo = TestUtility.createWorkOrder();
-        ServiceAppointment sa = TestUtility.createServiceAppointment(sr.Id, wo.Id, Datetime.now(), Datetime.now().addDays(4), Datetime.now(), Datetime.now().addHours(2), 'Scheduled', st.Id);
+        WorkType wt = TestUtility.createWorkType('test', 1, 'hours');
+        WorkOrder wo = TestUtility.createWorkOrder('test',wt.Id,st.Id);        ServiceAppointment sa = TestUtility.createServiceAppointment(sr.Id, wo.Id, Datetime.now(), Datetime.now().addDays(4), Datetime.now(), Datetime.now().addHours(2), 'Scheduled', st.Id);
         AssignedResource ar = TestUtility.createAssignedResource(sa.Id, sr.Id);
         ServiceAppointment sa1 = TestUtility.createServiceAppointment(sr.Id, wo.Id, Datetime.now(), Datetime.now().addDays(4), Datetime.now(), Datetime.now().addHours(2), 'Scheduled', st.Id);
         AssignedResource ar1 = TestUtility.createAssignedResource(sa1.Id, sr.Id);
@@ -118,7 +119,8 @@ public class MRDTGetSTMsTestClass{
         ServiceResourceSkill resourceSkill = TestUtility.createServiceResourceSkill(sr.Id);
         ServiceTerritoryMember stm = TestUtility.createServiceTerritoryMember(sr.Id, st.Id, Datetime.now().addDays(-1));
         ResourceAbsence ra = TestUtility.createResourceAbsence(sr.Id, Datetime.now(), Datetime.now().addHours(4));
-        WorkOrder wo = TestUtility.createWorkOrder();
+        WorkType wt = TestUtility.createWorkType('test', 1, 'hours');
+        WorkOrder wo = TestUtility.createWorkOrder('test',wt.Id,st.Id);        
         MRDTGetSTMs.inPayLoad payload = new MRDTGetSTMs.inPayLoad();
         payload.inTerritoryId = 'All';
         payload.inSkillId = resourceSkill.SkillId;
@@ -152,7 +154,8 @@ public class MRDTGetSTMsTestClass{
         ServiceResourceSkill resourceSkill = TestUtility.createServiceResourceSkill(sr.Id);
         ServiceTerritoryMember stm = TestUtility.createServiceTerritoryMember(sr.Id, st.Id, Datetime.now().addDays(-1));
         ResourceAbsence ra = TestUtility.createResourceAbsence(sr.Id, Datetime.now(), Datetime.now().addHours(4));
-        WorkOrder wo = TestUtility.createWorkOrder();
+        WorkType wt = TestUtility.createWorkType('test', 1, 'hours');
+        WorkOrder wo = TestUtility.createWorkOrder('test',wt.Id,st.Id);        
         MRDTGetSTMs.inPayLoad payload = new MRDTGetSTMs.inPayLoad();
         payload.inTerritoryId = st.Id;
         payload.inSkillId = 'All';
@@ -186,7 +189,8 @@ public class MRDTGetSTMsTestClass{
         ServiceResourceSkill resourceSkill = TestUtility.createServiceResourceSkill(sr.Id);
         ServiceTerritoryMember stm = TestUtility.createServiceTerritoryMember(sr.Id, st.Id, Datetime.now().addDays(-1));
         ResourceAbsence ra = TestUtility.createResourceAbsence(sr.Id, Datetime.now(), Datetime.now().addHours(4));
-        WorkOrder wo = TestUtility.createWorkOrder();
+        WorkType wt = TestUtility.createWorkType('test', 1, 'hours');
+        WorkOrder wo = TestUtility.createWorkOrder('test',wt.Id,st.Id);        
         MRDTGetSTMs.inPayLoad payload = new MRDTGetSTMs.inPayLoad();
         payload.inTerritoryId = st.Id;
         payload.inSkillId = resourceSkill.SkillId;
