@@ -16,7 +16,8 @@ Some jobs require a group of resources with varied skills, to go on-site over th
 1. Install Base and Screen Base packs (https://unofficialsf.com/flow-action-and-screen-component-basepacks/)
 2. Install Datatable (https://unofficialsf.com/datatable-lightning-web-component-for-flow-screens-2/)
 3. Install the Service Appointment Generator package (from GitHub)
-    1. GitHub Repository: [https://github.com/cxalbanese/multiresource.git ](https://github.com/LianeNugentGit/SA-Generator)
+    1. GitHub Repository: version 1 [https://github.com/cxalbanese/multiresource.git ]
+    2. version 2 (https://github.com/LianeNugentGit/SA-Generator)
 4. Deactivate the Validation Rule on Service Appointment [Dont_allow_scheduled_or_dispatched].
 5. Assign the permission set called [MR_DT_Permission_Set] to the admin users and the scheduling users who will use this package.
 6. Add the flow called [Multi Resource Assignment Wizard] to your work order lightning page and make sure to pass the record ID into this variable is checked on the flow component.
